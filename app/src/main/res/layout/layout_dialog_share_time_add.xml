@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img_dialog_info_title_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/text_add_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:paddingLeft="360dp"
+        android:text="3:00"
+        android:clickable="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="100dp"
+        >
+
+        <FrameLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkgray"
+            />
+
+        <TextView
+            android:id="@+id/text_add_time_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:text=" 04 \n 05 \n 06 "
+            android:paddingLeft="5dp"
+            android:clickable="true"
+            />
+        <FrameLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkgray"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="210dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        >
+        <FrameLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkgray"
+            />
+
+        <TextView
+            android:id="@+id/text_add_time_min"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:text=" 20 \n 30 \n 40 "
+            android:paddingLeft="5dp"
+            android:clickable="true"
+            />
+
+        <FrameLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/darkgray"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="30dp"
+        android:background="#313131"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        />
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="20dp"
+        android:background="#2c2c2c"
+        android:layout_marginTop="240dp"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="2.5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:background="@null"
+                android:text="예"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingLeft="2.5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:background="@null"
+                android:text="아니오"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

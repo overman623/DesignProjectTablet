@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:drawable="@drawable/deco_rectangle_mint" android:state_pressed="true"/>
+    <!-- focused -->
+    <item android:drawable="@drawable/deco_rectangle_mint" android:state_focused="true"/>
+    <!-- default -->
+
+    <!-- checked -->
+    <item android:drawable="@drawable/deco_rectangle_mint" android:state_checked="true"/>
+
+    <!-- checked -->
+    <item android:state_checked="false">
+        <color android:color="#383838"></color>
+    </item>
+    <item
+        android:state_pressed="false">
+        <color android:color="#383838"></color>
+    </item>
+
+</selector>

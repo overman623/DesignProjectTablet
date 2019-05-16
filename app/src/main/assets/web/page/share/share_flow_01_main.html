@@ -1,0 +1,76 @@
+<meta http-equiv='Content-Type'
+      content='text/html; charset=utf-8' xmlns:file="http://www.w3.org/1999/xhtml"/>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../dist/html5reset-1.6.1.css">
+    <script type="text/javascript" src="../../dist/jQuery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../dist/make.js"></script>
+</head>
+<style>
+
+    #parent{
+        width:1030px;
+        height:610px;
+    }
+
+    #total_image:active{
+        text-decoration:none;
+        color:#000000;
+    }
+
+    .time_add{
+        position: absolute;
+//        background-color:rgba(0, 0, 0, 0.6);
+        width: 480px;
+        height: 65px;
+    }
+
+
+    .info_return{
+        position: absolute;
+//        background-color:rgba(0, 0, 0, 0.6);
+        width: 480px;
+        height: 65px;
+    }
+
+</style>
+<script>
+
+    function resetButton(){
+        changeImage('init');
+    }
+
+    function changeImage(image){
+        if(image == 'init'){
+            $('#total_image').attr('src', '../../image/share/share_flow_01_main.jpg');
+        }else if(image == 'time_add'){
+            $('#total_image').attr('src', '../../image/share/share_flow_01_main_time_add.jpg');
+            dialog('time_add');
+        }else if(image == 'info_return'){
+            $('#total_image').attr('src', '../../image/share/share_flow_01_main_info_return.jpg');
+            dialog('info_return');
+        }
+
+    }
+
+    $(document).ready(function(){
+        cancelButton('home');
+    });
+
+</script>
+
+    <body>
+
+        <div id="parent">
+
+            <img id="total_image" width="100%" height="100%" src="../../image/share/share_flow_01_main.jpg"/>
+
+            <div class="time_add" style="left: 530px; top: 220px;" onClick="changeImage('time_add')" ></div>
+
+            <div class="info_return"  style="left: 530px; top: 530px;" onClick="changeImage('info_return')"></div>
+
+        </div>
+
+    </body>
+
+</html>

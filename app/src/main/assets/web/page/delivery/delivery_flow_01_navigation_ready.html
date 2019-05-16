@@ -1,0 +1,82 @@
+<meta http-equiv='Content-Type'
+      content='text/html; charset=utf-8' xmlns:file="http://www.w3.org/1999/xhtml"/><html>
+<head>
+    <script type="text/javascript" src="../../dist/jQuery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../dist/html5reset-1.6.1.css">
+</head>
+<style>
+
+    #parent{
+        width:1030px;
+        height:610px;
+    }
+
+    .list_item{
+        position: absolute;
+//      background-color:rgba(0, 0, 0, 0.6);
+        width: 370px;
+        height: 100px;
+    }
+
+    .list_call_item{
+        position: absolute;
+//      background-color:rgba(255, 0, 0, 0.6);
+        width: 110px;
+        height: 100px;
+    }
+
+    .go_next{
+        position: absolute;
+  //    background-color:rgba(0, 0, 0, 0.6);
+        width: 470px;
+        height: 65px;
+    }
+
+</style>
+<script>
+
+    function sendMessage(name){
+        window.Bridge.setMessage(name);
+    }
+
+    function navigate(){
+        sendMessage('navigate');
+    }
+
+    function resetButton(){
+        $('.go_next').css('background', '');
+    }
+
+    $(document).ready(function(){
+        $('.go_next').click(function(){
+            $('.go_next').css({'background-image':'url("../../image/delivery/resources/t_delivery_navi_start_on.png")', 'background-size': '470px 65px', 'background-repeat': 'none'});
+            sendMessage('dialog1');
+        });
+
+    });
+
+</script>
+
+    <body>
+
+        <div id="parent">
+
+            <img id="total_image" width="100%" height="100%" src="../../image/delivery/delivery_flow_04_map_marker.jpg"/>
+
+            <div class="list_item" style="left: 540px; top: 60px;" onClick="sendMessage('list_item')" ></div> <!--리스트 아이템1-->
+            <div class="list_item" style="left: 540px; top: 160px;" onClick="sendMessage('list_item')" ></div> <!--리스트 아이템2-->
+            <div class="list_item" style="left: 540px; top: 260px;" onClick="sendMessage('list_item')" ></div> <!--리스트 아이템3-->
+            <div class="list_item" style="left: 540px; top: 360px;" onClick="sendMessage('list_item')" ></div> <!--리스트 아이템4-->
+
+            <div class="list_call_item" style="left: 910px; top: 60px;" onClick="sendMessage('call')" ></div> <!--전화 버튼1-->
+            <div class="list_call_item" style="left: 910px; top: 160px;" onClick="sendMessage('call')" ></div> <!--전화 버튼2-->
+            <div class="list_call_item" style="left: 910px; top: 260px;" onClick="sendMessage('call')" ></div> <!--전화 버튼3-->
+            <div class="list_call_item" style="left: 910px; top: 360px;" onClick="sendMessage('call')" ></div> <!--전화 버튼4-->
+
+            <div class="go_next" style="left: 550px; top: 535px;"></div> <!--안내 버튼-->
+
+        </div>
+
+    </body>
+
+</html>

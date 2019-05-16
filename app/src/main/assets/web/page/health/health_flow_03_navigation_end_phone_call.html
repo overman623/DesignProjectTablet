@@ -1,0 +1,69 @@
+<meta http-equiv='Content-Type'
+      content='text/html; charset=utf-8' xmlns:file="http://www.w3.org/1999/xhtml"/>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../dist/html5reset-1.6.1.css">
+    <script type="text/javascript" src="../../dist/jQuery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../dist/make.js"></script>
+</head>
+<style>
+
+    #parent{
+        width:1030px;
+        height:610px;
+    }
+
+    #total_image:active{
+        text-decoration:none;
+        color:#000000;
+    }
+
+    .call_item{
+        position: absolute;
+     //   background-color:rgba(255, 0, 0, 0.6);
+        width: 68px;
+        height: 68px;
+    }
+
+    .map{
+        position: absolute;
+     //   background-color:rgba(255, 0, 0, 0.6);
+        width: 100%;
+        height: 500px;
+    }
+
+</style>
+<script>
+
+    var callToggle = false;
+
+    $(document).ready(function(){
+        //cancelButton('web_history_back');
+        cancelButton('web_history_back2');
+        $('.call_item').click(function(){
+            call();
+        });
+    });
+
+    function call(){
+        if(callToggle){
+            $('#total_image').attr('src', '../../image/health/health_flow_03_navigation_end_phone_call_on.jpg');
+        }else{
+            $('#total_image').attr('src', '../../image/health/health_flow_03_navigation_end_phone_call_off.jpg');
+        }
+        callToggle = !callToggle;
+    }
+
+</script>
+
+    <body>
+
+        <div id="parent">
+            <img id="total_image" width="100%" height="100%" src="../../image/health/health_flow_03_navigation_end_phone_call_on.jpg"/>
+            <div class="call_item" style="left: 650px; top: 40px;" ></div> <!--전화 버튼1-->
+            <!--<div class="map" style="left: 0px; top: 150px;" onClick="sendMessage('navigate')" ></div>-->
+        </div>
+
+    </body>
+
+</html>

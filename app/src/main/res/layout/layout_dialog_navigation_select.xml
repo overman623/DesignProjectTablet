@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f2f2f"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+
+
+        <katech.frame.ButtonLayout
+            android:id="@+id/btn_complete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <katech.frame.ButtonLayout
+                android:id="@+id/btn_call"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="350dp"
+                android:layout_alignParentLeft="true"
+                android:background="#363636"
+                android:layout_centerVertical="true"
+                />
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="350dp"
+                android:layout_alignParentRight="true"
+                android:background="#363636"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <katech.frame.ButtonLayout
+            android:id="@+id/btn_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

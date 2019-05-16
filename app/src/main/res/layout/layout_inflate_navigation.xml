@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="검색 결과"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:id="@+id/list_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_navigation_right_bottom"
+            android:layout_alignParentTop="true"
+            android:divider="#313131"
+            />
+
+        <RelativeLayout
+            android:id="@+id/layout_navigation_right_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            >
+
+            <Button
+                android:id="@+id/btn_start_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@null"
+                android:text="안내"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

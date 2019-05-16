@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img_dialog_info_title_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="조지희"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="7.5dp"
+        android:layout_marginTop="50dp"
+        />
+<!--    <ImageView
+        android:id="@+id/img_cancel_x"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textSize="20dp"
+        android:clickable="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="45dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/none"
+        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="7.5dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="고혈압\n\n천식\n\n골다골증"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="안정적인 운행속도를 유지하세요.\n\n차량 내 온도를 유지하세요.\n\n차량의 움직임을 최소화 하세요."
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:paddingRight="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:paddingLeft="7.5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:background="@null"
+                android:text="확인"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

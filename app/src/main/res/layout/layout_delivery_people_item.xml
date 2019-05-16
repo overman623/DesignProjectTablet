@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+    <ToggleButton
+        android:id="@+id/toggle_layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textOff=""
+        android:textOn=""
+        android:background="@drawable/background_none"
+        />
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:id="@+id/text_num"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/text_navigation_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="25dp"
+            android:text="김성은 | 12:00am"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:paddingLeft="60dp"
+            />
+        <TextView
+            android:id="@+id/text_navigation_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Sam Kim"
+            android:textSize="20dp"
+            android:textColor="#c4c4c4"
+            android:layout_marginBottom="15dp"
+            android:singleLine="true"
+            android:paddingLeft="60dp"
+            />
+    </RelativeLayout>
+
+    <katech.frame.ButtonLayout
+        android:id="@+id/btn_phone_call"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#313131"
+        >
+    </FrameLayout>
+
+</RelativeLayout>

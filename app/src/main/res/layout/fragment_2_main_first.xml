@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <katech.frame.ToggleButtonLayout
+            android:id="@+id/toggle_btn_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            >
+        </katech.frame.ToggleButtonLayout>
+
+        <katech.frame.DesignTextView
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:text="42"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="100dp"
+            android:layout_marginTop="95dp"
+            app:customFont="NotoSansCJKkr-Light.otf"
+            />
+
+        <TextView
+            android:id="@+id/text_d"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="85dp"
+            android:layout_marginRight="28dp"
+            android:text="D"
+            android:textSize="45dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="550dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        >
+
+        <katech.frame.ToggleButtonLayout
+            android:id="@+id/toggle_btn_left_light"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            >
+        </katech.frame.ToggleButtonLayout>
+
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                ></FrameLayout>
+
+            <katech.frame.ToggleButtonLayout
+                android:id="@+id/toggle_btn_head_light"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+            </katech.frame.ToggleButtonLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                ></FrameLayout>
+
+            <katech.frame.ToggleButtonLayout
+                android:id="@+id/toggle_btn_door_open"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+            </katech.frame.ToggleButtonLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                ></FrameLayout>
+
+            <katech.frame.ToggleButtonLayout
+                android:id="@+id/toggle_btn_seat_belt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+            </katech.frame.ToggleButtonLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                ></FrameLayout>
+
+        </LinearLayout>
+
+        <katech.frame.ToggleButtonLayout
+            android:id="@+id/toggle_btn_right_light"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            >
+        </katech.frame.ToggleButtonLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="50dp"
+        >
+
+        <katech.frame.ButtonLayout
+            android:id="@+id/btn_layout_battery"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+        </katech.frame.ButtonLayout>
+
+        <katech.frame.DesignTextView
+            android:id="@+id/text_battery_percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="60 %"
+            android:textSize="65dp"
+            android:layout_marginTop="93dp"
+            android:layout_marginLeft="7dp"
+            app:customFont="NotoSansCJKkr-Light.otf"
+            />
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="120km"
+                android:textSize="30dp"
+                android:gravity="end"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="주행가능"
+                android:textSize="25dp"
+                android:gravity="end"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-5dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_main_inflated_text"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+</RelativeLayout>

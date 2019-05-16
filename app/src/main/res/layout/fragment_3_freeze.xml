@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313131"
+    >
+
+    <include
+        android:id="@+id/left_side"
+        layout="@layout/include_left_side"
+        android:layout_width="250dp"
+        android:layout_height="match_parent">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/left_side"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingRight="2.5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="2.5dp"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#454545"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_cloud"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="현재 날씨"
+                            android:gravity="center_vertical|start"
+                            android:paddingLeft="70dp"
+                            android:textSize="20dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_alignParentBottom="true"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="40dp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_weather"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_centerInParent="true"
+                                />
+
+                            <FrameLayout
+                                android:id="@+id/center_line_weather"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/darkgray"
+                                android:layout_alignParentRight="true"
+                                />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="외부온도"
+                                    android:textSize="20dp"
+                                    android:paddingLeft="40dp"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:paddingLeft="40dp"
+                                    android:text="15˚"
+                                    android:textColor="@color/white"
+                                    android:textSize="40dp"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="현재습도"
+                                    android:textSize="20dp"
+                                    android:paddingLeft="40dp"
+                                    />
+                                <TextView
+                                    android:id="@+id/text_humidity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:paddingLeft="40dp"
+                                    android:text="40%"
+                                    android:textColor="@color/white"
+                                    android:textSize="40dp"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="2.5dp"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#454545"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_wind"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="바람조절"
+                            android:gravity="center_vertical|start"
+                            android:paddingLeft="70dp"
+                            android:textSize="20dp"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="30dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_freeze_color"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="-40dp"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                        <ImageView
+                            android:id="@+id/img_freeze_gray"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="-40dp"
+                            android:layout_centerHorizontal="true"
+                            />
+                        
+                        <SeekBar
+                            android:id="@+id/seek_bar_freeze"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:maxHeight="5dp"
+                            android:minHeight="5dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:paddingRight="5dp"
+            android:paddingLeft="2.5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#454545"
+                >
+                <RelativeLayout
+                    android:id="@+id/layout_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_temperature"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="온도조절"
+                        android:gravity="center_vertical|start"
+                        android:paddingLeft="70dp"
+                        android:textSize="20dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/layout_title"
+                    android:layout_alignParentBottom="true"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/img_background_graph"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_marginLeft="130dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_temperature_background"
+                        android:layout_width="150dp"
+                        android:layout_height="330dp"
+                        android:layout_centerHorizontal="true"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_temperature_foreground"
+                        android:layout_width="150dp"
+                        android:layout_height="330dp"
+                        android:layout_centerHorizontal="true"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="-20dp"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="현재온도"
+                            android:textSize="20dp"
+                            android:paddingLeft="5dp"
+                            />
+
+                        <katech.frame.DesignTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="25˚"
+                            android:textSize="90dp"
+                            android:layout_marginTop="-85dp"
+                            android:textColor="@color/white"
+                            app:customFont="NotoSansCJKkr-Light.otf"
+                            />
+
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+                            <katech.frame.ToggleButtonLayout
+                                android:id="@+id/toggle_btn_fresh_air"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"/>
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="환기"
+                                android:textSize="20dp"
+                                android:gravity="center_horizontal"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            >
+                            <katech.frame.ToggleButtonLayout
+                                android:id="@+id/toggle_btn_cool_air"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"/>
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="냉방"
+                                android:textSize="20dp"
+                                android:gravity="center_horizontal"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+                            <katech.frame.ToggleButtonLayout
+                                android:id="@+id/toggle_btn_hot_air"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"/>
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="난방"
+                                android:textSize="20dp"
+                                android:gravity="center_horizontal"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

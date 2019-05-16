@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/text_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="가입된 이메일 찾기"
+        android:textColor="@color/text_color_1"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_size_title"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="본인의 확인이 완료되었습니다.\n\n설정하신 이메일"
+            android:gravity="center"
+            android:textColor="@color/text_color_1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nsmartcar@smartcar.com\n"
+            android:gravity="center"
+            android:textColor="@color/skyblue"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="입니다."
+            android:gravity="center"
+            android:textColor="@color/text_color_1"
+            />
+    </LinearLayout>
+
+    <!--버튼-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/deco_btn_skyblue"
+                android:textColor="@color/white"
+                android:text="확인"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

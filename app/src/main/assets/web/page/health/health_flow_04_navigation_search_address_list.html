@@ -1,0 +1,119 @@
+<meta http-equiv='Content-Type'
+      content='text/html; charset=utf-8' xmlns:file="http://www.w3.org/1999/xhtml"/>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../dist/html5reset-1.6.1.css">
+    <script type="text/javascript" src="../../dist/jQuery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../dist/make.js"></script>
+</head>
+<style>
+
+    #parent{
+        width:1030px;
+        height:610px;
+    }
+
+    #total_image:active{
+        text-decoration:none;
+        color:#000000;
+    }
+
+    .list_item{
+        position: absolute;
+//        background-color:rgba(0, 0, 0, 0.6);
+        width: 540px;
+        height: 100px;
+    }
+
+    .edit_text{
+        position: absolute;
+        background-color:rgba(255, 255, 255, 0.0);
+        width: 268px;
+        height: 50px;
+        border: 0px;
+        font-size:25px;
+    }
+
+    .edit_text:focus{
+        outline: none;
+        background-color:rgba(255, 255, 255, 1);
+    }
+
+
+    .go_next{
+        position: absolute;
+ //       background-color:rgba(0, 0, 0, 0.6);
+        width: 470px;
+        height: 65px;
+    }
+
+</style>
+<script>
+
+    var readyForStart = false;
+
+
+
+    function resetButton(){
+        changeImage('init');
+    }
+
+    function changeImage(image){
+        readyForStart = false;
+        if(image == 'list_click'){
+            $('#total_image').attr('src', '../../image/health/health_flow_04_navigation_search_address_list_click.jpg');
+            readyForStart = true;
+
+        }else if(image == 'init'){
+            $('#total_image').attr('src', '../../image/health/health_flow_04_navigation_search_address_list.jpg');
+            readyForStart = false;
+
+        }
+
+    }
+
+    $(document).ready(function(){
+        cancelButton('web_history_back2');
+        $('.go_next').click(function(){
+            if(readyForStart){
+                $('#total_image').attr('src', '../../image/health/health_flow_04_navigation_search_address_list_click_next.jpg');
+                dialog('re_navigation');
+            }
+        });
+
+        $('.edit_text').on('input', function(e){
+            if($('.edit_text').val() == ''){
+                changeImage('init');
+                searchListOff();
+            }else{
+                changeImage('search_list');
+                searchListOn();
+            }
+        });
+
+        $('.edit_text').val('서초경찰서');
+
+    });
+
+</script>
+
+    <body>
+
+        <div id="parent">
+
+            <img id="total_image" width="100%" height="100%" src="../../image/health/health_flow_04_navigation_search_address_list.jpg"/>
+
+            <div class="list_item" style="left: 540px; top: 60px;" onClick="changeImage('list_click')" ></div> <!--리스트 아이템1-->
+            <div class="list_item" style="left: 540px; top: 160px;" onClick="changeImage('list_click')" ></div> <!--리스트 아이템2-->
+            <div class="list_item" style="left: 540px; top: 260px;" onClick="changeImage('list_click')" ></div> <!--리스트 아이템3-->
+            <div class="list_item" style="left: 540px; top: 360px;" onClick="changeImage('list_click')" ></div> <!--리스트 아이템4-->
+
+            <input class="edit_text" style="left: 120px; top: 10px;" type="text">
+
+            <div class="go_next" style="left: 550px; top: 535px;"></div> <!--안내 버튼-->
+
+        </div>
+
+    </body>
+
+</html>

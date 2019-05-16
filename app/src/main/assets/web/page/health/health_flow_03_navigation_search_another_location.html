@@ -1,0 +1,136 @@
+<meta http-equiv='Content-Type'
+      content='text/html; charset=utf-8' xmlns:file="http://www.w3.org/1999/xhtml"/>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../dist/html5reset-1.6.1.css">
+    <script type="text/javascript" src="../../dist/jQuery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../dist/make.js"></script>
+</head>
+<style>
+
+    #parent{
+        width:1030px;
+        height:610px;
+    }
+
+    #total_image:active{
+        text-decoration:none;
+        color:#000000;
+    }
+
+    .go_search{
+        position: absolute;
+//        background-color:rgba(255, 0, 0, 0.6);
+        width: 97px;
+        height: 59px;
+    }
+
+    .search_list{
+        position: absolute;
+  //      background-color:rgba(255, 255, 0, 0.6);
+        width: 668px;
+        height: 200px;
+    }
+
+    .edit_text{
+        position: absolute;
+        background-color:rgba(255, 255, 255, 0.0);
+        width: 668px;
+        height: 50px;
+        border: 0px;
+        font-size:25px;
+    }
+
+    .edit_text:focus{
+        outline: none;
+        background-color:rgba(255, 255, 255, 1);
+    }
+
+    .map{
+        position: absolute;
+     //   background-color:rgba(255, 0, 0, 0.6);
+        width: 100%;
+        height: 500px;
+    }
+
+</style>
+<script>
+
+    var searchToggle = false;
+    var searchListToggle = false;
+
+    function searchButtonOff(){
+        searchToggle = false;
+    }
+
+    function searchButtonOn(){
+        searchToggle = true;
+    }
+
+    function searchListOff(){
+        searchListToggle = false;
+    }
+
+    function searchListOn(){
+        searchListToggle = true;
+    }
+
+    $(document).ready(function(){
+        cancelButton('web_history_back2');
+        //sendMessage('search');
+        $('.go_search').click(function(){
+            if(searchToggle){
+                changeImage('push_search');
+                sendMessage('address_list');
+            }
+        });
+
+        $('.search_list').click(function(){
+            if(searchListToggle){
+                searchButtonOn();
+                changeImage('init');
+                searchListOff();
+                $('.edit_text').css({'background-color':'rgba(255, 255, 255, 1)'});
+                $('.edit_text').val('서초경찰서');
+            }
+        });
+
+        $('.edit_text').on('input', function(e){
+            if($('.edit_text').val() == ''){
+                changeImage('init');
+                searchListOff();
+            }else{
+                changeImage('search_list');
+                searchListOn();
+            }
+        });
+
+    });
+
+    function changeImage(image){
+        searchListOff();
+        if(image == 'init'){
+            $('#total_image').attr('src', '../../image/health/health_flow_03_navigation_search_another_location.jpg');
+        }else if(image == 'search_list'){
+            $('#total_image').attr('src', '../../image/health/health_flow_03_navigation_search_another_location_search_list.jpg');
+        }else if(image == 'push_search'){
+            $('#total_image').attr('src', '../../image/health/health_flow_03_navigation_search_another_location_push_search.jpg');
+        }
+    }
+
+</script>
+
+    <body>
+
+        <div id="parent">
+            <img id="total_image" width="100%" height="100%" src="../../image/health/health_flow_03_navigation_search_another_location.jpg"/>
+            <div class="go_search" style="left: 88px; top: 8px;" ></div>
+            <div class="search_list" style="left: 200px; top: 60px;" ></div>
+            <!--<div class="call_item" style="left: 650px; top: 40px;" ></div> &lt;!&ndash;전화 버튼1&ndash;&gt;
+            <div class="map" style="left: 0px; top: 150px;" onClick="sendMessage('navigate')" ></div>-->
+            <input class="edit_text" style="left: 200px; top: 10px;" type="text">
+        </div>
+
+    </body>
+
+</html>

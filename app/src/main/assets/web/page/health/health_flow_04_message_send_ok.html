@@ -1,0 +1,76 @@
+<meta http-equiv='Content-Type'
+      content='text/html; charset=utf-8' xmlns:file="http://www.w3.org/1999/xhtml"/>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../dist/html5reset-1.6.1.css">
+    <script type="text/javascript" src="../../dist/jQuery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../dist/make.js"></script>
+</head>
+<style>
+
+    #parent{
+        width:1030px;
+        height:610px;
+    }
+
+    #total_image:active{
+        text-decoration:none;
+        color:#000000;
+    }
+
+    .list_item{
+        position: absolute;
+        background-color:rgba(0, 0, 0, 0.6);
+        width: 370px;
+        height: 100px;
+    }
+
+    .list_call_item{
+        position: absolute;
+        background-color:rgba(255, 0, 0, 0.6);
+        width: 110px;
+        height: 100px;
+    }
+
+    .go_next{
+        position: absolute;
+        width: 470px;
+        height: 65px;
+    }
+
+    .sound_toggle{
+    //    background-color:rgba(255, 0, 0, 0.6);
+        position: absolute;
+        width: 68px;
+        height: 68px;
+    }
+
+</style>
+<script>
+
+    var soundToggle = false;
+    var navigationToggle = false;
+
+
+    $(document).ready(function(){
+        cancelButton('home');
+        dialog('send_message_ok');
+    });
+
+    function flagChange(){
+        navigationToggle = false;
+    }
+
+
+</script>
+
+    <body>
+
+        <div id="parent">
+            <img id="total_image" width="100%" height="100%" src="../../image/health/health_flow_02_navigation.jpg"/>
+            <div class="sound_toggle" style="left: 11px; top: 7px;" ></div> <!--사운드 토글-->
+        </div>
+
+    </body>
+
+</html>

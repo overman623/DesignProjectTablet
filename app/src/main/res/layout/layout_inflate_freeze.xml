@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#55ffffff">
+
+    <RelativeLayout
+        android:id="@+id/layout_inflater_delete"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/img_inflater_delete"
+            android:layout_width="300dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/center_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/center_line"
+        android:layout_marginRight="-60dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/img_freeze_color"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_freeze_gray"
+                android:layout_width="350dp"
+                android:layout_height="200dp" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="420dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:layout_marginTop="-20dp"
+            >
+
+            <SeekBar
+                android:id="@+id/seek_bar_freeze"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="5dp"
+                android:minHeight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/center_line"
+        android:orientation="vertical"
+        android:layout_marginLeft="80dp"
+        >
+
+        <katech.frame.DesignTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25˚"
+            android:textColor="#363636"
+            android:textSize="90dp"
+            app:customFont="NotoSansCJKkr-Light.otf"
+            android:layout_marginTop="-45dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            >
+
+            <katech.frame.ToggleButtonLayout
+                android:id="@+id/toggle_btn_snow"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <katech.frame.ToggleButtonLayout
+                android:id="@+id/toggle_btn_temp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <katech.frame.ButtonLayout
+        android:id="@+id/btn_detail_freeze"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-5dp"
+        />
+
+</RelativeLayout>

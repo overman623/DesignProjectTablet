@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313131"
+    >
+
+    <include
+        android:id="@+id/left_side"
+        layout="@layout/include_left_side"
+        android:layout_width="250dp"
+        android:layout_height="match_parent">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/left_side"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_navigation_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_weight="0.8"
+            >
+
+            <ImageView
+                android:id="@+id/img_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <RelativeLayout
+                android:id="@+id/layout_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                >
+                <!--볼륨조절 바로 쓰일 것이다.-->
+                <RelativeLayout
+                    android:id="@+id/layout_sound_bar"
+                    android:layout_width="60dp"
+                    android:layout_height="120dp"
+                    android:background="@color/red"
+                    android:layout_below="@+id/btn_toggle_sound"
+                    android:layout_marginTop="-20dp"
+                    android:visibility="gone"
+                    />
+                <katech.frame.ToggleButtonLayout
+                    android:id="@+id/btn_toggle_sound"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_phone_call"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingLeft="250dp"
+                android:paddingRight="250dp"
+                android:visibility="gone"
+                android:background="#88000000"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue"
+                    >
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_text_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="#88000000"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:layout_weight="3"
+                    android:textSize="22dp"
+                    android:gravity="center"
+                    android:text="현재위치"
+                    />
+                <TextView
+                    android:id="@+id/text_left_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:text="서울특별시 서초동 예림아파트"
+                    android:gravity="center_vertical|start"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_navigation_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="-1"
+            android:background="#313131"
+            >
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

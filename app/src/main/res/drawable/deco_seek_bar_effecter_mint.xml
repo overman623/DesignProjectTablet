@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 배경 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:centerColor="#A5A5AE"
+                android:endColor="#A5A5AE"
+                android:startColor="#A5A5AE" />
+            <corners android:radius="5dp" />
+        </shape>
+
+    </item>
+    <!-- 프로그래스바 색상 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:angle="180"
+                    android:endColor="#34D9C9"
+                    android:startColor="#0BD4E8" />
+                <corners android:radius="5dp" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

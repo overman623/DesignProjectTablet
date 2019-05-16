@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="남은예약"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="건"
+                android:textSize="20dp"
+                android:paddingRight="50dp"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <katech.frame.DesignTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:paddingLeft="40dp"
+            android:layout_centerHorizontal="true"
+            app:customFont="NotoSansCJKkr-Light.otf"
+            android:layout_marginTop="-15dp"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkgray"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="다음예약"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="조지희"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkgray"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="경기도 안양시 동안구 평촌동 무계리 45번길"
+            android:textSize="20dp"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="25dp"
+
+            android:singleLine="true"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkgray"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

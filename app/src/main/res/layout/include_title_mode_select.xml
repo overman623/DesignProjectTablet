@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/text_title_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="SMARTCAR"
+            android:textSize="@dimen/text_size_title"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+<!--    <katech.frame.ButtonLayout
+        android:id="@+id/btn_title_left_return"
+        android:layout_width="@dimen/title_icon_size"
+        android:layout_height="@dimen/title_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        >
+    </katech.frame.ButtonLayout>-->
+
+    <katech.frame.ButtonLayout
+        android:id="@+id/btn_title_left"
+        android:layout_width="@dimen/title_icon_size"
+        android:layout_height="@dimen/title_icon_size"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        >
+    </katech.frame.ButtonLayout>
+
+    <TextView
+        android:id="@+id/text_title_right"
+        android:layout_width="90dp"
+        android:layout_height="@dimen/title_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:gravity="end|center_vertical"
+        android:text="3:25 PM"
+        android:textSize="@dimen/text_size_title"
+        android:textColor="@color/white"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkgray"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

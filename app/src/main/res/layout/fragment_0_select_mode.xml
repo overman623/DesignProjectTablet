@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <include
+        layout="@layout/include_title_mode_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+    </include>
+
+
+
+    <ViewFlipper
+        android:id="@+id/flipper_mode"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/img_login_view1"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/img_login_view2"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/img_login_view3"
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+<!--    <ImageView
+        android:id="@+id/img_select_mode_content"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        />-->
+
+    <katech.frame.ButtonLayout
+        android:id="@+id/btn_left_arrow"
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true">
+
+    </katech.frame.ButtonLayout>
+
+    <katech.frame.ButtonLayout
+        android:id="@+id/btn_right_arrow"
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"></katech.frame.ButtonLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="75dp"
+        >
+        <Button
+            android:id="@+id/btn_next_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="차량 운행화면으로 가기"
+            android:background="@drawable/deco_btn_skyblue"
+            android:textSize="@dimen/text_size_button"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_bottom_title"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    
+</RelativeLayout>

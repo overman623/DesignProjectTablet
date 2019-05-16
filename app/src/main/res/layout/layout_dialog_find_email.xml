@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/text_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="가입된 이메일 찾기"
+        android:textColor="@color/text_color_1"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_size_title"
+        />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="도로명"
+                android:gravity="center"
+                android:textColor="@color/text_color_1"
+               />
+
+            <RadioButton
+                android:id="@+id/radio_btn_1"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:checked="true"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="(구)우편변호"
+                android:gravity="center"
+                android:textColor="@color/text_color_1"
+                />
+            <RadioButton
+                android:id="@+id/radio_btn_2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            style="@style/sidePadding"
+            >
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="이름"
+                android:gravity="start|center"
+                android:textColor="@color/text_color_1"
+                />
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="@color/none"
+                android:textColor="@color/text_color_1"
+                android:focusable="false"
+                android:paddingLeft="50dp"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_1"
+                android:layout_alignParentBottom="true"
+                ></FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            style="@style/sidePadding"
+            >
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="생년월일"
+                android:gravity="center"
+                android:textColor="@color/text_color_1"
+                />
+            <EditText
+                android:id="@+id/edit_text_birth"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="@color/none"
+                android:textColor="@color/text_color_1"
+                android:focusable="false"
+                android:paddingLeft="70dp"
+                android:hint="6자리(ex.900101)"
+                />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_1"
+                android:layout_alignParentBottom="true"
+                ></FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            style="@style/sidePadding"
+            >
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="성별"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/text_color_1"
+                android:paddingLeft="5dp"
+                android:layout_weight="3"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="남"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_1"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_1"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    />
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:text="여"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_1"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_btn_2"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    />
+
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="240dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:paddingLeft="15dp"
+            >
+
+            <katech.frame.SpinnerLayout
+                android:id="@+id/spinner_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </katech.frame.SpinnerLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            >
+
+            <EditText
+                android:id="@+id/edit_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="@color/none"
+                android:textColor="@color/text_color_1"
+                android:focusable="false"
+
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color_1"
+                android:layout_alignParentBottom="true"
+                ></FrameLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <!--버튼-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="2.5dp"
+            >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/deco_btn_skyblue"
+                android:textColor="@color/white"
+                android:text="취소"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/deco_btn_skyblue"
+                android:textColor="@color/white"
+                android:text="찾기"
+                android:paddingLeft="2.5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
