@@ -5,10 +5,10 @@ Smart Mobility Linked Tablet UI/UX
 산업통상자원부 기술혁신사업을 위한 모듈러 개념을 적용한 1-2인용 스마트 모빌리티 디자인 개발과제 참여기업 연구원으로서 해당 과제를 수행함.
 
 ## Build status 
-Android Studio 2.5
-Android SDK 26
-SamSung Tablet 8 inch
-Java
+- Android Studio 2.5
+- Android SDK 26
+- SamSung Tablet 8 inch
+- Java
 
 ## Features 
 ICT 기술이 접목된 사용자 인터페이스(UI : User Interface)
